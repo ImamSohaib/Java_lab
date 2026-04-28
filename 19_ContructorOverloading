@@ -1,0 +1,19 @@
+public class ConstructorOverloading {
+    int x;
+
+    ConstructorOverloading() {
+        x = 10;
+    }
+
+    ConstructorOverloading(int a) {
+        x = a;
+    }
+
+    public static void main(String[] args) {
+        ConstructorOverloading obj1 = new ConstructorOverloading();
+        ConstructorOverloading obj2 = new ConstructorOverloading(20);
+
+        System.out.println("Default: " + obj1.x);
+        System.out.println("Parameterized: " + obj2.x);
+    }
+}
